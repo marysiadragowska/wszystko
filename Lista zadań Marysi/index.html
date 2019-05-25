@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+<h1>Moja lista zadań</h1>
+<ul>
+    <li v-for="item in items" :class ="{ 'removed': item.done}" @click="checkItem(item)">{{ item.text }}</li>
+</ul>
+<div class="butons">  
+    <input v-model="newItem" placeholder="Wpisz zadanie"type="text" @keyup.enter="addItem"/>
+    <button class="add" @click="addItem">Dodaj</button>
+    <button class="clear"@click="clear">Wyczyść</button>
+
+</div>
+
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="men.js"></script>
+</body>
+</html>

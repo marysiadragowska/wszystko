@@ -1,0 +1,30 @@
+body {
+    background-color: aqua;
+    text-align: center;
+}
+button{
+    border-radius:60px;
+    height: 60px;
+    width: 60px;
+   background-color: blue;
+}
+h1{
+    font-size: 40px;
+}
+
+.item >img{
+    width: 150px;
+    height: 150px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+
+
+
+
